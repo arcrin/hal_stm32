@@ -22,3 +22,11 @@ void HAL_MspInit(void)
 	HAL_NVIC_SetPriority(BusFault_IRQn, 0, 0);
 	HAL_NVIC_SetPriority(UsageFault_IRQn, 0, 0);
 }
+
+void HAL_UART_MspInit(UART_HandleTypeDef *huart){
+	//here we are  going to do the low level initialization of the USART2 peripheral
+
+	//1. enable the clock for the USART2 peripheral
+	//2. pin muxing configurations
+	//3. enable the IRQ and set up the priority (NVIC settings)
+}
